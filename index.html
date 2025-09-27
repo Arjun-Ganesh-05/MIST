@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIST - Website Task1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">MIST</div>
+        <nav class="nav-links">
+            <a href="#home-page" class="nav-button">Home</a>
+            <a href="#glazing-mist" class="nav-button active-glaze">Glazing MIST</a>
+            <a href="#about-us" class="nav-button">About Us</a>
+        </nav>
+    </header>
+    <section id="home-page" class="page-section">
+        <div class="giant-logo-container">
+            <div class="giant-logo-text">MIST</div>
+            <div class="giant-logo-text giant-logo-stacked">MIST</div>
+            <div class="giant-logo-text giant-logo-extra-stacked">MIST</div>
+        </div>
+        
+        
+
+        
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="glazing-mist" class="page-section">
+        <div class="image-gallery">
+            <div class="image-card">
+                <div class="image-placeholder">image 1</div>
+                <div class="image-description">Image description for image 1</div>
+            </div>
+            <div class="image-card">
+                <div class="image-placeholder">image 2</div>
+                <div class="image-description">Image description for image 2</div>
+            </div>
+            <div class="image-card">
+                <div class="image-placeholder">image 3</div>
+                <div class="image-description">Image description for image 3</div>
+            </div>
+        </div>
+
+        <div class="interactive-area">
+            <button id="toggleButton" class="click-me-button">
+                &#9654; click me
+            </button>
+            <div id="displayText" class="display-text-container">
+                YOU CLICKED THE BUTTON YAYYY!!!
+            </div>
+        </div>
+        
+        <div class="note-text">
+            (on clicking the button, the text on the right appears and on clicking the button again, it disappears)
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="about-us" class="page-section">
+        <div class="center-content">
+            <button id="alertButton" class="alert-button">
+                press me pls
+            </button>
+        </div>
+        
+        <div class="note-text-bottom">
+            clicking on this button shows your name, registration number and phone number in a JS alert
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
