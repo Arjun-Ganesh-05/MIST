@@ -31,7 +31,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="white"/><polygon points="50,5 95,95 5,95" fill="%23ff6600"/></svg>'); 
+    background-image: url('https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg'); 
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: left center;
@@ -76,46 +76,28 @@ body {
     margin: 0 0 0 0; 
 }
 
-
-
 .giant-logo-container {
-    position: relative;
     width: 100%;
-    max-width: 800px;
-    height: 250px;
     margin-bottom: 30px;
-    overflow: hidden; 
+    margin-left: 210px;
+    overflow: hidden;
+    display: flex;
 }
 
-.giant-logo-text {
-    font-size: 15vw; /* Highly responsive and large font size */
-    font-weight: 900; /* Extra bold */
-    color: #fff;
-    line-height: 0.8; /* Beginner-style tight line height */
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Simple shadow */
-}
 
-.giant-logo-stacked {
+.giant-logo-rot1 {
     /* Mimics the stacking/mirroring effect */
-    transform: translate(-50%, -50%) rotate(180deg); 
-    color: #ff6600; /* Different color to imply mirroring/glazing effect */
-    opacity: 0.7;
-    z-index: 1;
+    transform: rotate(270deg); 
 }
 
 /* Optional: Additional stacking to fill space, as seen in the complex graphic */
-.giant-logo-extra-stacked {
-    transform: translate(-50%, -50%) rotate(180deg) scaleX(-1); 
-    color: rgba(255, 255, 255, 0.2); 
-    z-index: 0;
+.giant-logo-rot2 {
+    transform: rotate(90deg); 
 }
 
+.giant-logo-rot3 {
+    transform: rotate(180deg); 
+}
 
 .beginner-text {
     background-color: #000;
