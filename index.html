@@ -1,96 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIST - Website Task1</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIST WebDev Form</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <img src="image.png" alt="MIST Logo" class="logo" />
+    <h2>Name, Reg Number, Contact Number of person submitting</h2>
+  </header>
 
-    <header class="navbar">
-        <div class="logo">MIST</div>
-        <nav class="nav-links">
-            <a href="#home-page" class="nav-button">Home</a>
-            <a href="#glazing-mist" class="nav-button active-glaze">Glazing MIST</a>
-            <a href="#about-us" class="nav-button">About Us</a>
-        </nav>
-    </header>
-    <section id="home-page" class="page-section">
-        <div class="giant-logo-container">
-            <div class="giant-logo-text">
-                <a href="https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg">
-                    <img src="https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg" alt="MIST Logo">
-                </a>
-            </div>
-            <div class="giant-logo-text giant-logo-rot1">
-                <a href="https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg">
-                    <img src="https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg" alt="MIST Logo">
-                </a>
-            </div>
-            <div class="giant-logo-text giant-logo-rot2">
-                <a href="https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg">
-                    <img src="https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg" alt="MIST Logo">
-                </a>
-            </div>
-            <div class="giant-logo-text giant-logo-rot3">
-                <a href="https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg">
-                    <img src="https://www.manipal.edu/content/dam/manipal/mu/mit/images/student_clubs_swmit2021/technical-clubs_mit/logo_square/MIST.JPG.transform/manipal-edu-transform-width-height-304px/image.jpg" alt="MIST Logo">
-                </a>
-            </div>
-        </div>
-        
-        
+  <main>
+    <section class="form-section">
+      <label>Enter Name <span>(Should be letters only)</span></label>
+      <input type="text" id="name" placeholder="Enter name" />
 
-        
+      <label>Enter Reg Number <span>(Should be 9 numbers only)</span></label>
+      <input type="text" id="reg" placeholder="Enter registration number" maxlength="9" />
+
+      <label>Enter birthday <span>(Use react calendar form validation here)</span></label>
+      <input type="date" id="birthday" />
+
+      <div class="question">
+        <p>Is webdev the best domain? :)</p>
+        <button id="yesBtn" class="yes">YES</button>
+        <button id="noBtn" class="no">NO</button>
+      </div>
     </section>
 
-    <hr class="section-divider">
+    <section class="output-section">
+      <div class="sheet">
+        <h3>MIST Mancomm Member 69</h3>
+        <p><strong>My name is:</strong> <span id="outName"></span></p>
+        <p><strong>My registration number is:</strong> <span id="outReg"></span></p>
+        <p><strong>My birthday is on:</strong> <span id="outBirthday"></span></p>
+        <div class="question-output">
+          <p>Is webdev the best domain? :)</p>
+          <button id="outYes" class="yes">YES</button>
+          <button id="outNo" class="no">NO</button>
+        </div>
+      </div>
 
-    <section id="glazing-mist" class="page-section">
-        <div class="image-gallery">
-            <div class="image-card">
-                <div class="image-placeholder">image 1</div>
-                <div class="image-description">Image description for image 1</div>
-            </div>
-            <div class="image-card">
-                <div class="image-placeholder">image 2</div>
-                <div class="image-description">Image description for image 2</div>
-            </div>
-            <div class="image-card">
-                <div class="image-placeholder">image 3</div>
-                <div class="image-description">Image description for image 3</div>
-            </div>
-        </div>
-
-        <div class="interactive-area">
-            <button id="toggleButton" class="click-me-button">
-                &#9654; click me
-            </button>
-            <div id="displayText" class="display-text-container">
-                YOU CLICKED THE BUTTON YAYYY!!!
-            </div>
-        </div>
-        
-        <div class="note-text">
-            (on clicking the button, the text on the right appears and on clicking the button again, it disappears)
-        </div>
+      <div class="submitted-by">
+        <p><strong>My name is:</strong> Arjun</p>
+        <p><strong>Reg no:</strong> 240905238</p>
+        <p><strong>Contact number:</strong> 8904290605</p>
+      </div>
     </section>
+  </main>
 
-    <hr class="section-divider">
-
-    <section id="about-us" class="page-section">
-        <div class="center-content">
-            <button id="alertButton" class="alert-button">
-                press me pls
-            </button>
-        </div>
-        
-        <div class="note-text-bottom">
-            clicking on this button shows your name, registration number and phone number in a JS alert
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
